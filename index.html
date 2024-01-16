@@ -140,6 +140,40 @@
           </div>
         </div>
       </div>
+
+      <section id="my-cars">
+        <div class="container">
+          <div class="row text-center mb-4">
+            <div class="col">
+              <h2>My Cars</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+              <div class="car-box">
+                <h4 class="car-name">Honda Civic Turbo</h4>
+                <img src="img/car/1.png" alt="Honda Civic Turbo" class="car-img" />
+                <a href="#" class="btn btn-light car-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="car-box">
+                <h4 class="car-name">Mitsubishi Lancer</h4>
+                <img src="img/car/2.png" alt="Mitsubishi Lancer" class="car-img" />
+                <a href="#" class="btn btn-light car-detail-button">Show Details</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="car-box">
+                <h4 class="car-name">Nissan GTR</h4>
+                <img src="img/car/3.png" alt="Nissan GTR" class="car-img" />
+                <a href="#" class="btn btn-light car-detail-button">Show Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#fff"
@@ -320,6 +354,17 @@
             console.log("Success!", response);
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <!-- Vanilla Tilt JS -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".car-box"), {
+        max: 30,
+        speed: 800,
+        scale: 1.1,
+        glare: true,
       });
     </script>
   </body>
